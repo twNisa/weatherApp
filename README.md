@@ -5,6 +5,6 @@ Search a location for weather data, displays relevant retrieved data
 - convert between celsius and fahrenheit
 - bundled using webpack
 
-[Live App](https://twnisa.github.io/weather-app/)
+[Live App](https://twnisa.github.io/weatherApp/)
 
 ![Screenshot](./weatherApp.png)
