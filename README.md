@@ -6,4 +6,5 @@ Search a location for weather data, displays relevant retrieved data
 - bundled using webpack
 
 [Live App](https://twnisa.github.io/weather-app/)
+
 ![Screenshot](./weatherApp.png)
