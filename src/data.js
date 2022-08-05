@@ -1,7 +1,7 @@
 const openKey = '314516512d45a893c3ddd41870bb907e';
 let data;
 async function getGeo(place){
-  const geoCall = `http://api.openweathermap.org/geo/1.0/direct?q=${place}&limit=5&appid=${openKey}`
+  const geoCall = `https://api.openweathermap.org/geo/1.0/direct?q=${place}&limit=5&appid=${openKey}`
   const response = await fetch(geoCall);
   const data = await response.json();
   if(data.length===0){
