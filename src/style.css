@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-size: 16px;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  background-image: linear-gradient(180deg, #5fc4ff, #7158e2);
+}
+.container{
+  background-color: #f3f3f3;
+  padding: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.container .home{
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+.container .home.active{
+  display: flex;
+}
+.container .search{
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+}
+.container .search input{
+  height: 2rem;
+  font-size: 1.5rem;
+  border: 0;
+  height: 4rem;
+  width: 14rem;
+  transition: width .4s ease;
+}
+.container .search input:focus{
+  outline: none;
+}
+.container .search button{
+  background-color: white;
+  border: 0;
+  cursor: pointer;
+  font-size: 1.5rem;
+  height: 4rem;
+  width: 4rem;
+
+  transition: transform .4s ease;
+}
+.container .search button:hover{
+  background-color: rgb(207, 207, 207);
+  transition: background-color .25s ease;
+}
+
+.container .home .error{
+
+  color: red;
+  border-bottom: red 1px solid;
+
+}
+.container .result{
+  display: none;
+  flex-direction: column;
+}
+.container .result.active{
+  display: flex;
+}
+.container .result button.home{
+  position: absolute;
+  height: 2rem;
+  width: 2rem;
+  top:-1rem;
+  right: -1rem;
+  border-radius: 50%;
+  border: 0;
+  background-color: #333;
+  cursor: pointer;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform .25s ease;
+}
+.container .result button.home:hover{
+  transform: scale(120%);
+}
+.container .result .focus{
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.container .result .focus button.convert{
+  position: absolute;
+  border: 0;
+  background-color: #7158e2;
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  top: -1rem;
+  left: -1rem; 
+  transition: transform .25s ease;
+
+}
+.container .result .focus button.convert:hover{
+  transform: scale(120%);
+}
+.container .result .focus div{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+  flex: 1 1 0;
+}
+.container .result .focus .temp{
+  border-right: 2px solid black;
+
+}
+
+.container .result .details{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+.container .result .details .details-item{
+
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .result .details .details-item .title{
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  color: white;
+  background-color: #7158e2;
+  padding: .5rem 1rem;
+  width: 10rem;
+  
+}
+.container .result .details .details-item .title i{
+  width: 1rem;
+}
+.container .result .details .details-item .data{
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0 1rem;
+}
+
+
